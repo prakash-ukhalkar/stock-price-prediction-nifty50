@@ -10,12 +10,12 @@ This repository serves as a comprehensive, end-to-end machine learning pipeline 
 
 Whether you're a quantitative analyst, a data science enthusiast, or someone transitioning into algorithmic trading, this repository provides a clear, structured path to understanding stock price prediction using modern machine learning techniques.
 
-### Focus Areas
+### 🎯 Focus Areas
 
-• **Deep Learning Mastery**: Comprehensive implementation of LSTM, GRU, and Transformer models for time series forecasting
-• **Technical Analysis**: Feature engineering with 20+ technical indicators including RSI, MACD, Bollinger Bands, and more
-• **Real-Time Data Pipeline**: Automated data acquisition from NSE using `yfinance` and `nsepy` libraries
-• **Production Deployment**: Interactive Streamlit web application with real-time predictions and visualizations
+- **Deep Learning Mastery**: Comprehensive implementation of LSTM, GRU, and Transformer models for time series forecasting
+- **Technical Analysis**: Feature engineering with 20+ technical indicators including RSI, MACD, Bollinger Bands, and more
+- **Real-Time Data Pipeline**: Automated data acquisition from NSE using `yfinance` and `nsepy` libraries
+- **Production Deployment**: Interactive Streamlit web application with real-time predictions and visualizations
 
 ---
 
@@ -37,12 +37,12 @@ stock-price-prediction-nifty50/
 │
 ├── notebooks/                                   <- Jupyter notebooks for analysis & modeling
 │   ├── 01_data_acquisition_preprocessing.ipynb  <- Data collection & cleaning pipeline
-│   ├── 02_exploratory_data_analysis.ipynb      <- Market analysis & visualization
-│   ├── 03_feature_engineering.ipynb            <- Technical indicators & feature creation
-│   ├── 04_model_development_lstm.ipynb         <- LSTM model architecture & training
-│   ├── 05_model_development_transformers.ipynb <- Transformer-based models
-│   ├── 06_model_evaluation_comparison.ipynb    <- Performance analysis & benchmarking
-│   └── 07_backtesting_strategy.ipynb          <- Trading strategy backtesting
+│   ├── 02_exploratory_data_analysis.ipynb       <- Market analysis & visualization
+│   ├── 03_feature_engineering.ipynb             <- Technical indicators & feature creation
+│   ├── 04_model_development_lstm.ipynb          <- LSTM model architecture & training
+│   ├── 05_model_development_transformers.ipynb  <- Transformer-based models
+│   ├── 06_model_evaluation_comparison.ipynb     <- Performance analysis & benchmarking
+│   └── 07_backtesting_strategy.ipynb            <- Trading strategy backtesting
 │
 ├── src/                                         <- Source code modules
 │   ├── data/                                    <- Data processing utilities
@@ -52,7 +52,7 @@ stock-price-prediction-nifty50/
 │   └── utils/                                   <- Helper functions & configurations
 │
 ├── models/                                      <- Trained model artifacts
-├── streamlit_app/                              <- Web application deployment
+├── streamlit_app/                               <- Web application deployment
 ├── tests/                                       <- Unit tests & validation scripts
 └── docs/                                        <- Documentation & references
 ```
@@ -65,9 +65,9 @@ To run this stock prediction system locally, follow these comprehensive setup st
 
 ### 1. Prerequisites
 
-• **Python**: Version 3.8 or higher (3.10+ recommended)
-• **Git**: For repository management
-• **NSE Data Access**: Internet connection for real-time data fetching
+- **Python**: Version 3.8 or higher (3.10+ recommended)
+- **Git**: For repository management
+- **NSE Data Access**: Internet connection for real-time data fetching
 
 ### 2. Setup Instructions
 
