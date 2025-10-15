@@ -1,0 +1,19 @@
+# Environment and Python
+venv/
+.ipynb_checkpoints/
+.DS_Store
+__pycache__/
+*.pyc
+*.swp
+
+# Data Files (Keep only small samples or download scripts)
+data/processed/*
+!data/processed/README.md  # Keep the README inside the folder
+
+# Models & Artifacts
+models/*
+!models/README.md
+
+# Logs
+*.log
+*.sqlite

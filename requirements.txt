@@ -1,0 +1,36 @@
+# Core Data Handling
+pandas>=2.0
+numpy>=1.23
+scikit-learn>=1.3
+
+# Data Acquisition
+nsepy
+yfinance
+python-dateutil  # Required by nsepy/datetime operations
+
+# Time Series / Stats Models
+statsmodels
+pmdarima          # Auto ARIMA
+prophet           # Facebook Prophet
+
+# Feature Engineering
+ta                # Technical Analysis library (New addition)
+
+# Machine Learning
+xgboost
+lightgbm
+
+# Deep Learning (We will use a unified package or base Keras/PyTorch)
+tensorflow>=2.10
+keras
+
+# Visualization
+matplotlib
+seaborn
+plotly            # For interactive charts
+
+# Deployment
+streamlit
+
+# Backtesting (New Addition - Optional, but highly recommended)
+backtesting
