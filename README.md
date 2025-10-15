@@ -35,14 +35,19 @@ stock-price-prediction-nifty50/
 │   ├── processed/                               <- Cleaned and feature-engineered datasets
 │   └── download_data.py                         <- Automated NSE data fetching script
 │
-├── notebooks/                                   <- Jupyter notebooks for analysis & modeling
-│   ├── 01_data_acquisition_preprocessing.ipynb  <- Data collection & cleaning pipeline
-│   ├── 02_exploratory_data_analysis.ipynb       <- Market analysis & visualization
-│   ├── 03_feature_engineering.ipynb             <- Technical indicators & feature creation
-│   ├── 04_model_development_lstm.ipynb          <- LSTM model architecture & training
-│   ├── 05_model_development_transformers.ipynb  <- Transformer-based models
-│   ├── 06_model_evaluation_comparison.ipynb     <- Performance analysis & benchmarking
-│   └── 07_backtesting_strategy.ipynb            <- Trading strategy backtesting
+├── notebooks/                                   <- Jupyter notebooks for comprehensive analysis & modeling
+│   ├── 01_Data_Acquisition_and_Preprocessing.ipynb         <- Fetch, merge, clean NIFTY50 data (2020-2025)
+│   ├── 02_EDA_Time_Series_Foundations.ipynb                <- Visualize trends, stationarity tests, ACF/PACF
+│   ├── 03_Feature_Engineering_Technical_Analysis.ipynb     <- Generate lag features and technical indicators
+│   ├── 04_Classical_Models_ARIMA_Prophet.ipynb             <- ARIMA/SARIMA and Facebook Prophet baseline models
+│   ├── 05_Traditional_ML_KNN_and_SVR.ipynb                 <- KNN and SVR for classification and regression
+│   ├── 06_Ensemble_ML_XGBoost_and_RandomForest.ipynb      <- Advanced ensemble methods with SHAP analysis
+│   ├── 07_Deep_Learning_I_ANN_LSTM_Basics.ipynb           <- ANN and simple LSTM for single-step prediction
+│   ├── 08_Deep_Learning_II_Advanced_BiLSTM_Seq2Seq.ipynb  <- Bi-LSTM/Seq2Seq with technical indicators
+│   ├── 09_Evolutionary_Optimization_GA_SA.ipynb           <- Genetic Algorithm and Simulated Annealing tuning
+│   ├── 10_Model_Evaluation_and_Backtesting.ipynb          <- Comprehensive model comparison and validation
+│   ├── 11_Strategy_Hybrid_Model_and_P&L.ipynb             <- Hybrid models and trading strategy P&L analysis
+│   └── 12_Deployment_Streamlit_Dashboard.ipynb            <- Interactive forecasting dashboard development
 │
 ├── src/                                         <- Source code modules
 │   ├── data/                                    <- Data processing utilities
@@ -107,43 +112,55 @@ jupyter lab
 
 ### 3. Running the Analysis
 
-Start with notebook `01_data_acquisition_preprocessing.ipynb` and proceed sequentially through the numbered analysis pipeline.
+Start with notebook `01_Data_Acquisition_and_Preprocessing.ipynb` and proceed sequentially through the numbered analysis pipeline from data acquisition to final deployment.
 
 ---
 
-## Notebooks: A Detailed Learning Roadmap
+## 📊 Notebooks: A Detailed Learning Roadmap
 
-| **#** | **Notebook** | **Description** |
-|-------|--------------|-----------------|
-| 01 | Data Acquisition & Preprocessing | NSE data fetching, cleaning pipeline, handling missing values, and data quality checks |
-| 02 | Exploratory Data Analysis | Market trend analysis, correlation studies, volatility patterns, and statistical insights |
-| 03 | Feature Engineering | Technical indicators implementation, lag features, moving averages, and signal generation |
-| 04 | LSTM Model Development | Sequential model architecture, hyperparameter tuning, and time series cross-validation |
-| 05 | Transformer Models | Attention-based models for stock prediction, multi-head attention, and positional encoding |
-| 06 | Model Evaluation & Comparison | Performance metrics (RMSE, MAE, MAPE), model comparison, and statistical significance tests |
-| 07 | Backtesting & Strategy | Trading strategy implementation, risk-adjusted returns, and portfolio optimization |
+| **#** | **Notebook** | **Core Focus & Output** |
+|-------|--------------|-------------------------|
+| 01 | Data Acquisition & Preprocessing | Fetch, merge, clean NIFTY50 data (2020-2025). Calculate Log Returns |
+| 02 | EDA Time Series Foundations | Visualize trends, check Stationarity (ADF), ACF/PACF, Time-based split |
+| 03 | Feature Engineering Technical Analysis | Generate Lag Features and Technical Indicators (RSI, MA, Pivot Points) |
+| 04 | Classical Models ARIMA Prophet | Implement ARIMA/SARIMA and Facebook Prophet as strong linear/statistical baseline |
+| 05 | Traditional ML KNN and SVR | Implement KNN and SVR using engineered features, focusing on classification (Up/Down) and regression |
+| 06 | Ensemble ML XGBoost and RandomForest | Advanced XGBoost/LightGBM and feature importance analysis (SHAP) |
+| 07 | Deep Learning I ANN LSTM Basics | ANN and simple LSTM for single-step prediction |
+| 08 | Deep Learning II Advanced BiLSTM Seq2Seq | Bi-LSTM/Seq2Seq architecture incorporating multiple TA features as exogenous inputs |
+| 09 | Evolutionary Optimization GA SA | Hyperparameter tuning of SVR (or LSTM) model using Genetic Algorithm (GA) and Simulated Annealing (SA) |
+| 10 | Model Evaluation and Backtesting | Compare all models (ARIMA vs. LSTM vs. GA-SVR, etc.) using RMSE, MAE, MAPE, Directional Accuracy, and Walk-Forward Validation |
+| 11 | Strategy Hybrid Model and P&L | Create final Hybrid Model (e.g., ARIMA residuals + ML) and define Trading Strategy (Entry/Exit Points) to measure profitability |
+| 12 | Deployment Streamlit Dashboard | Final app for interactive forecasting and insight sharing |
 
 ---
 
-## Key Features & Capabilities
+## 🛠️ Key Features & Capabilities
 
-### Advanced Machine Learning Models
-- **LSTM Networks**: Bidirectional LSTM with attention mechanisms
-- **Transformer Architecture**: Multi-head self-attention for sequence modeling
-- **Ensemble Methods**: Model stacking and weighted averaging
-- **Hyperparameter Optimization**: Bayesian optimization using Optuna
+### Comprehensive Model Comparison
+- **Classical Time Series**: ARIMA, SARIMA, and Facebook Prophet for statistical baselines
+- **Traditional Machine Learning**: KNN and SVR with engineered features for classification and regression
+- **Ensemble Methods**: XGBoost, LightGBM, and Random Forest with SHAP feature importance analysis
+- **Deep Learning**: ANN, LSTM, and advanced Bi-LSTM/Seq2Seq architectures
+- **Evolutionary Optimization**: Genetic Algorithm (GA) and Simulated Annealing (SA) for hyperparameter tuning
 
-### Technical Analysis Integration
-- **20+ Technical Indicators**: RSI, MACD, Bollinger Bands, Stochastic Oscillator
-- **Custom Features**: Price momentum, volatility clustering, volume analysis
-- **Market Regime Detection**: Bull/bear market classification
-- **Risk Metrics**: VaR, Sharpe ratio, maximum drawdown
+### Advanced Technical Analysis
+- **Core Technical Indicators**: RSI, Moving Averages, Pivot Points, and momentum-based features
+- **Lag Features**: Time-delayed variables for capturing temporal dependencies
+- **Stationarity Analysis**: ADF tests, ACF/PACF analysis for time series foundations
+- **Feature Engineering**: Log returns, volatility clustering, and market regime detection
+
+### Rigorous Evaluation Framework
+- **Multiple Metrics**: RMSE, MAE, MAPE for regression accuracy
+- **Directional Accuracy**: Classification performance for market direction prediction
+- **Walk-Forward Validation**: Robust time series cross-validation methodology
+- **Backtesting & P&L**: Real trading strategy simulation with profit/loss analysis
 
 ### Production-Ready Deployment
-- **Streamlit Web App**: Interactive dashboard with real-time predictions
-- **API Endpoints**: RESTful API for model serving
-- **Automated Retraining**: Scheduled model updates with new market data
-- **Monitoring & Alerting**: Model drift detection and performance tracking
+- **Hybrid Model Architecture**: Combining ARIMA residuals with ML predictions
+- **Interactive Streamlit Dashboard**: Real-time forecasting and model insights
+- **Trading Strategy Integration**: Entry/exit point generation with profitability metrics
+- **Comprehensive Documentation**: Step-by-step jupyter notebook progression
 
 ---
 
