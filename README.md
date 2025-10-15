@@ -10,7 +10,7 @@ This repository serves as a comprehensive, end-to-end machine learning pipeline 
 
 Whether you're a quantitative analyst, a data science enthusiast, or someone transitioning into algorithmic trading, this repository provides a clear, structured path to understanding stock price prediction using modern machine learning techniques.
 
-### 🎯 Focus Areas
+### Focus Areas
 
 - **Deep Learning Mastery**: Comprehensive implementation of LSTM, GRU, and Transformer models for time series forecasting
 - **Technical Analysis**: Feature engineering with 20+ technical indicators including RSI, MACD, Bollinger Bands, and more  
