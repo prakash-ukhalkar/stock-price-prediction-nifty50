@@ -116,7 +116,7 @@ Start with notebook `01_Data_Acquisition_and_Preprocessing.ipynb` and proceed se
 
 ---
 
-## 📊 Notebooks: A Detailed Learning Roadmap
+## Notebooks: A Detailed Learning Roadmap
 
 | **#** | **Notebook** | **Core Focus & Output** |
 |-------|--------------|-------------------------|
@@ -135,7 +135,7 @@ Start with notebook `01_Data_Acquisition_and_Preprocessing.ipynb` and proceed se
 
 ---
 
-## 🛠️ Key Features & Capabilities
+## Key Features & Capabilities
 
 ### Comprehensive Model Comparison
 - **Classical Time Series**: ARIMA, SARIMA, and Facebook Prophet for statistical baselines
@@ -281,7 +281,7 @@ Built with ❤️ for the quantitative finance and data science community
 
 ---
 
-## 🔗 Additional Resources
+## Additional Resources
 
 - **Live Demo**: [Streamlit App](https://your-app-url.streamlit.app)
 - **Documentation**: [Project Wiki](https://github.com/prakash-ukhalkar/stock-price-prediction-nifty50/wiki)
