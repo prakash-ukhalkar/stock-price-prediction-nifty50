@@ -13,7 +13,7 @@ Whether you're a quantitative analyst, a data science enthusiast, or someone tra
 ### 🎯 Focus Areas
 
 - **Deep Learning Mastery**: Comprehensive implementation of LSTM, GRU, and Transformer models for time series forecasting
-- **Technical Analysis**: Feature engineering with 20+ technical indicators including RSI, MACD, Bollinger Bands, and more
+- **Technical Analysis**: Feature engineering with 20+ technical indicators including RSI, MACD, Bollinger Bands, and more  
 - **Real-Time Data Pipeline**: Automated data acquisition from NSE using `yfinance` and `nsepy` libraries
 - **Production Deployment**: Interactive Streamlit web application with real-time predictions and visualizations
 
