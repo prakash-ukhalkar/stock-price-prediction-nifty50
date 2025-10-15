@@ -1,36 +1,72 @@
-# Core Data Handling
+# Core Data Handling & Analysis
 pandas>=2.0
 numpy>=1.23
+scipy>=1.10
 scikit-learn>=1.3
 
 # Data Acquisition
 nsepy
 yfinance
-python-dateutil  # Required by nsepy/datetime operations
+python-dateutil
 
-# Time Series / Stats Models
-statsmodels
-pmdarima          # Auto ARIMA
-prophet           # Facebook Prophet
+# Time Series Analysis & Classical Models
+statsmodels>=0.14
+pmdarima>=2.0         # Auto ARIMA
+prophet>=1.1          # Facebook Prophet
+arch                  # GARCH models (optional for volatility modeling)
 
-# Feature Engineering
-ta                # Technical Analysis library (New addition)
+# Feature Engineering & Technical Analysis
+ta>=0.10              # Technical Analysis library
+ta-lib               # Alternative TA library (optional but powerful)
 
-# Machine Learning
-xgboost
-lightgbm
+# Traditional Machine Learning
+xgboost>=1.7
+lightgbm>=3.3
+catboost             # Additional gradient boosting (optional)
 
-# Deep Learning (We will use a unified package or base Keras/PyTorch)
+# Deep Learning
 tensorflow>=2.10
-keras
+keras>=2.10
+torch>=2.0           # PyTorch for alternative DL implementations
+torchvision          # PyTorch vision utils
 
-# Visualization
-matplotlib
-seaborn
-plotly            # For interactive charts
+# Evolutionary Optimization & Hyperparameter Tuning
+deap>=1.3            # Distributed Evolutionary Algorithms (Genetic Algorithm)
+scikit-optimize      # Bayesian optimization
+optuna>=3.0          # Advanced hyperparameter optimization
+hyperopt             # Alternative optimization library
 
-# Deployment
-streamlit
+# Advanced ML & Model Interpretation
+shap>=0.42           # SHAP values for feature importance
+imbalanced-learn     # Handle imbalanced datasets
+yellowbrick          # ML visualization
 
-# Backtesting (New Addition - Optional, but highly recommended)
-backtesting
+# Visualization & Plotting
+matplotlib>=3.6
+seaborn>=0.12
+plotly>=5.15         # Interactive charts
+bokeh                # Alternative interactive plotting
+mplfinance           # Financial plotting
+
+# Backtesting & Trading Strategy
+backtesting>=0.3
+zipline-reloaded     # Algorithmic trading platform (optional)
+vectorbt             # Fast backtesting (optional but powerful)
+
+# Deployment & Web Apps
+streamlit>=1.25
+fastapi              # API development (optional)
+uvicorn             # ASGI server for FastAPI
+
+# Utilities & Performance
+joblib               # Model persistence
+tqdm                 # Progress bars
+numba               # JIT compilation for performance
+cython              # Performance optimization (optional)
+
+# Development & Testing
+jupyter>=1.0
+jupyterlab>=4.0
+pytest              # Testing framework
+black               # Code formatting
+flake8              # Linting

@@ -1,19 +1,60 @@
 # Environment and Python
 venv/
+env/
+.venv/
+.env
 .ipynb_checkpoints/
 .DS_Store
 __pycache__/
 *.pyc
+*.pyo
+*.pyd
 *.swp
+*.swo
+*~
+
+# IDE
+.vscode/
+.idea/
+*.sublime-*
 
 # Data Files (Keep only small samples or download scripts)
+data/raw/*
 data/processed/*
-!data/processed/README.md  # Keep the README inside the folder
+!data/raw/README.md
+!data/processed/README.md
+!data/raw/.gitkeep
+!data/processed/.gitkeep
 
 # Models & Artifacts
 models/*
 !models/README.md
+!models/.gitkeep
 
-# Logs
+# Evolutionary Optimization Results
+results/
+experiments/
+hyperparameter_search/
+*.pkl
+*.joblib
+
+# Streamlit
+.streamlit/
+
+# Logs and Outputs
 *.log
 *.sqlite
+logs/
+outputs/
+
+# Large files and temporary files
+*.csv
+*.xlsx
+*.h5
+*.hdf5
+temp/
+tmp/
+
+# Jupyter notebook outputs (optional - keep if you want clean notebooks in repo)
+# Uncomment the next line if you want to exclude all notebook outputs
+# *.ipynb
