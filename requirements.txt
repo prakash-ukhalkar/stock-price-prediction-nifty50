@@ -70,3 +70,4 @@ jupyterlab>=4.0
 pytest              # Testing framework
 black               # Code formatting
 flake8              # Linting
+ipykernels          # Jupyter kernel management
