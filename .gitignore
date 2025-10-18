@@ -58,4 +58,4 @@ tmp/
 # Jupyter notebook outputs (optional - keep if you want clean notebooks in repo)
 # Uncomment the next line if you want to exclude all notebook outputs
 notebooks/*.ipynb
-*.html
+.gitignore
